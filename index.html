@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#172c45">
+    <meta name="description" content="Encontre cursos e oportunidades gratuitas para dar seus primeiros passos em tecnologia.">
+    <title>Trilha Aberta | Aprenda tecnologia</title>
+    <script>
+      try {
+        const savedTheme = localStorage.getItem("trilha-aberta:tema:v1");
+        const prefersDark = window.matchMedia?.("(prefers-color-scheme: dark)")?.matches;
+        document.documentElement.dataset.theme = savedTheme === "light" || savedTheme === "dark"
+          ? savedTheme
+          : (prefersDark ? "dark" : "light");
+      } catch {
+        document.documentElement.dataset.theme = "light";
+      }
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="resources.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <div class="topline">
+      <span class="topline-dot" aria-hidden="true"></span>
+      Projeto piloto de educação digital <span class="topline-divider">/</span> links para fontes oficiais
+    </div>
+
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Trilha Aberta, página inicial">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none">
+            <path d="M8 29.5 18.2 19 25 25.8 32 18.5" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M25.8 18.5H32v6.2" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="9" cy="11" r="3" fill="currentColor"/>
+          </svg>
+        </span>
+        <span class="brand-name"><strong>trilha</strong><em>aberta</em></span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="#catalogo">Oportunidades</a>
+        <a href="#sobre">Como funciona</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Alternar tema claro ou escuro" aria-pressed="false" title="Ativar tema escuro">
+          <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 15.2A8.2 8.2 0 0 1 8.8 3.6 8.6 8.6 0 1 0 20.4 15.2Z"></path></svg>
+          <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path></svg>
+          <span class="theme-label">Escuro</span>
+        </button>
+        <a class="header-link" href="#catalogo">Explorar catálogo <span aria-hidden="true">↗</span></a>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> APRENDER MUDA CAMINHOS</p>
+          <h1 id="hero-title">Seu próximo passo na tecnologia pode começar <span>de graça.</span></h1>
+          <p class="hero-description">Cursos, trilhas e materiais de aprendizagem reunidos para ajudar você a descobrir por onde começar.</p>
+          <a class="button button-primary" href="#catalogo">Encontrar oportunidades <span aria-hidden="true">↓</span></a>
+          <div class="hero-notes" aria-label="Sobre o catálogo">
+            <span><i class="check-mark" aria-hidden="true">✓</i> Fontes oficiais</span>
+            <span><i class="check-mark" aria-hidden="true">✓</i> Sem cadastro no Trilha Aberta</span>
+          </div>
+        </div>
+
+        <div class="hero-art" role="img" aria-label="Ilustração de uma trilha de aprendizagem em três etapas">
+          <div class="art-glow art-glow-one"></div>
+          <div class="art-glow art-glow-two"></div>
+          <div class="art-caption">UM CAMINHO DE CADA VEZ</div>
+          <div class="path-line" aria-hidden="true"></div>
+          <div class="path-card path-card-one">
+            <span class="path-number">01</span>
+            <span class="path-icon icon-search" aria-hidden="true">⌕</span>
+            <span class="path-label"><strong>Explore</strong><small>seus interesses</small></span>
+          </div>
+          <div class="path-card path-card-two">
+            <span class="path-number">02</span>
+            <span class="path-icon icon-book" aria-hidden="true">▤</span>
+            <span class="path-label"><strong>Aprenda</strong><small>no seu ritmo</small></span>
+          </div>
+          <div class="path-card path-card-three">
+            <span class="path-number">03</span>
+            <span class="path-icon icon-spark" aria-hidden="true">✳</span>
+            <span class="path-label"><strong>Construa</strong><small>seu próximo projeto</small></span>
+          </div>
+          <span class="art-orbit orbit-one" aria-hidden="true"></span>
+          <span class="art-orbit orbit-two" aria-hidden="true"></span>
+        </div>
+      </section>
+
+      <section class="intro-strip" id="sobre" aria-label="Sobre o projeto">
+        <div class="intro-item">
+          <span class="intro-number">01</span>
+          <div><h2>Descoberta simples</h2><p>Encontre opções por tema, nível e formato.</p></div>
+        </div>
+        <div class="intro-item">
+          <span class="intro-number">02</span>
+          <div><h2>Links confiáveis</h2><p>Você segue direto para quem oferece o conteúdo.</p></div>
+        </div>
+        <div class="intro-item">
+          <span class="intro-number">03</span>
+          <div><h2>Feito para começar</h2><p>Uma primeira seleção voltada a quem está aprendendo.</p></div>
+        </div>
+      </section>
+
+      <section class="catalog-section" id="catalogo" aria-labelledby="catalog-title">
+        <div class="catalog-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span> CATÁLOGO PILOTO</p>
+            <h2 id="catalog-title">Encontre uma trilha<br><span>que combine com você.</span></h2>
+          </div>
+          <p class="catalog-explainer">Uma seleção inicial de plataformas e materiais gratuitos. Confira as condições e a disponibilidade na página oficial antes de começar.</p>
+        </div>
+
+        <form class="filter-panel" id="filters" role="search" aria-label="Buscar e filtrar oportunidades">
+          <div class="search-field">
+            <label for="search-input">Buscar oportunidades</label>
+            <div class="search-control">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 4.5 4.5"></path></svg>
+              <input id="search-input" name="q" type="search" placeholder="Ex.: front-end, Python, dados..." autocomplete="off" aria-controls="resource-grid">
+              <kbd>/</kbd>
+            </div>
+          </div>
+
+          <div class="select-field">
+            <label for="topic-filter">Área de interesse</label>
+            <select id="topic-filter" name="topic">
+              <option value="">Todas as áreas</option>
+              <option value="Desenvolvimento web">Desenvolvimento web</option>
+              <option value="Programação">Programação</option>
+              <option value="Dados e nuvem">Dados e nuvem</option>
+              <option value="Tecnologia">Tecnologia</option>
+            </select>
+          </div>
+
+          <div class="select-field">
+            <label for="level-filter">Nível</label>
+            <select id="level-filter" name="level">
+              <option value="">Todos os níveis</option>
+              <option value="Iniciante">Iniciante</option>
+              <option value="Vários níveis">Vários níveis</option>
+            </select>
+          </div>
+
+          <button class="clear-button" type="reset" aria-label="Limpar busca e filtros">Limpar</button>
+        </form>
+
+        <div class="results-toolbar">
+          <label class="saved-filter" for="saved-only">
+            <input id="saved-only" type="checkbox">
+            <span class="saved-switch" aria-hidden="true"></span>
+            <span>Mostrar só as salvas <span class="saved-total" id="saved-count">0</span></span>
+          </label>
+          <p id="result-count" class="result-count" aria-live="polite" aria-atomic="true"></p>
+        </div>
+
+        <div class="resource-grid" id="resource-grid" aria-label="Oportunidades disponíveis"></div>
+        <div class="empty-state" id="empty-state" hidden>
+          <span class="empty-icon" aria-hidden="true">⌕</span>
+          <h3>Nenhuma oportunidade encontrada</h3>
+          <p>Tente mudar a busca ou remover algum filtro.</p>
+          <button class="button button-secondary" type="button" id="empty-reset">Limpar filtros</button>
+        </div>
+      </section>
+
+      <section class="source-note" aria-label="Nota sobre as informações">
+        <div class="source-icon" aria-hidden="true">i</div>
+        <div>
+          <h2>Um ponto importante sobre gratuidade</h2>
+          <p>O Trilha Aberta não vende cursos nem solicita seus dados. Regras de inscrição, vagas e conteúdo podem mudar no provedor. Confira a fonte oficial antes de se inscrever. Favoritos ficam somente neste navegador.</p>
+        </div>
+        <span class="checked-date">Fontes conferidas em<br><strong>31 out 2026</strong></span>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#inicio" aria-label="Voltar ao início">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none"><path d="M8 29.5 18.2 19 25 25.8 32 18.5" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M25.8 18.5H32v6.2" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="11" r="3" fill="currentColor"/></svg>
+        </span>
+        <span class="brand-name"><strong>trilha</strong><em>aberta</em></span>
+      </a>
+      <p>Aprendizagem aberta. Próximos passos possíveis.</p>
+      <a class="back-top" href="#inicio">Voltar ao topo ↑</a>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
