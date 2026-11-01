@@ -1,5 +1,9 @@
 # Trilha Aberta - proposta do projeto
 
+# Aplicação publicada
+
+O MVP está disponível em [trilha-aberta.vercel.app](https://trilha-aberta.vercel.app/).
+
 ## Problema social
 
 Pessoas interessadas em tecnologia podem ter dificuldade para encontrar e comparar oportunidades gratuitas confiáveis. Cursos, oficinas e trilhas ficam espalhados por diferentes sites e apresentam informações de maneiras variadas. A primeira etapa do projeto é validar essa dificuldade em conversas com estudantes e pessoas que estejam iniciando uma transição profissional.
