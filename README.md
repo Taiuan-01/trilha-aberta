@@ -2,6 +2,10 @@
 
 Catálogo piloto de cursos, trilhas e materiais gratuitos para quem quer começar a aprender tecnologia.
 
+# Aplicação publicada
+
+Acesse o MVP da Trilha Aberta: [trilha-aberta.vercel.app](https://trilha-aberta.vercel.app/).
+
 ## O que o MVP faz
 
 - Busca por nome, provedor, tema ou descrição.
